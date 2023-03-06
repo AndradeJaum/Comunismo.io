@@ -1,28 +1,32 @@
 import { Link } from "@remix-run/react";
 import { useOptionalUser } from "~/utils";
+import { useTranslation } from "react-i18next";
 
 export default function Header() {
+  let { t } = useTranslation();
+
   const user = useOptionalUser();
+
   return (
-    <main className="flex h-20 w-screen text-white justify-between	">
+    <main className="flex h-20 w-screen justify-between text-white	">
       <nav className="flex items-center justify-center gap-1 px-4">
         <Link
-          to="/capitalismo"
+          to="/capitalism"
           className="rounded-2xl px-2 py-1 tracking-widest no-underline hover:bg-red-dark"
         >
-          Capitalismo
+          {t("capitalism")}
         </Link>
         <Link
-          to="/"
+          to="/socialism"
           className="rounded-2xl px-2 py-1 tracking-widest no-underline hover:bg-red-dark"
         >
-          Socialismo
+          {t("socialism")}
         </Link>
         <Link
-          to="/"
+          to="/communism"
           className="rounded-2xl px-2 py-1 tracking-widest no-underline hover:bg-red-dark"
         >
-          Comunismo
+          {t("communism")}
         </Link>
         <Link
           to="/"
