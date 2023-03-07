@@ -29,16 +29,16 @@ export default function Header() {
           {t("communism")}
         </Link>
         <Link
-          to="/"
+          to="/brazilianParties"
           className="rounded-2xl px-2 py-1 tracking-widest no-underline hover:bg-red-dark"
         >
-          Partidos Brasileiros
+          {t("brazilianParties")}
         </Link>
         <Link
-          to="/"
+          to="/readingGuide"
           className="rounded-2xl px-2 py-1 tracking-widest no-underline hover:bg-red-dark"
         >
-          Guia de Leitura
+          {t("readingGuide")}
         </Link>
       </nav>
       <div className="px-4">

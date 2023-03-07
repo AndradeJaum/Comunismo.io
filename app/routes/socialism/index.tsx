@@ -1,8 +1,11 @@
-export default function Socialismo() {
+import { useTranslation } from "react-i18next";
 
-    return (
-      <main>
-        <h1>Socialismo</h1>
-      </main>
-    );
-  }
+export default function Socialismo() {
+  let { t } = useTranslation();
+
+  return (
+    <main>
+      <h1>{t("socialism")}</h1>
+    </main>
+  );
+}
