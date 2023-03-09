@@ -2,13 +2,13 @@ import { Link } from "@remix-run/react";
 import { useOptionalUser } from "~/utils";
 import { useTranslation } from "react-i18next";
 
-export default function Header() {
+export default function Index() {
   let { t } = useTranslation();
 
   const user = useOptionalUser();
 
   return (
-    <main className="flex h-20 w-screen justify-between text-white	">
+    <header className="flex h-20 w-screen justify-between text-white	">
       <nav className="flex items-center justify-center gap-1 px-4">
         <Link
           to="/capitalism"
@@ -66,6 +66,6 @@ export default function Header() {
           </div>
         )}
       </div>
-    </main>
+    </header>
   );
 }

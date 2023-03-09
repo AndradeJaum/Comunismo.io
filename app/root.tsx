@@ -15,14 +15,11 @@ import { getUser } from "./session.server";
 
 import useTranslation from "./hooks/useChangeLanguage";
 import i18next from "~/i18next.server";
-import { useChangeLanguage } from "remix-i18next";
 
 export async function loader({ request }: LoaderArgs) {
   let locale = await i18next.getLocale(request);
-  return json({ locale });
+  return json({ locale, user: await getUser(request) });
 }
-
-// user: await getUser(request),
 
 export let handle = {
   // In the handle export, we can add a i18n key with namespaces our route
