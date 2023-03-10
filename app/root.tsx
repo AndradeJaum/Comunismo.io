@@ -8,6 +8,7 @@ import {
   Scripts,
   ScrollRestoration,
   useLoaderData,
+  useLocation,
 } from "@remix-run/react";
 
 import tailwindStylesheetUrl from "./styles/tailwind.css";
@@ -15,10 +16,17 @@ import { getUser } from "./session.server";
 
 import useTranslation from "./hooks/useChangeLanguage";
 import i18next from "~/i18next.server";
+import { useEffect } from "react";
+
+import * as gtag from "~/utils/gtags.client";
 
 export async function loader({ request }: LoaderArgs) {
   let locale = await i18next.getLocale(request);
-  return json({ locale, user: await getUser(request) });
+  return json({
+    locale,
+    user: await getUser(request),
+    gaTrackingId: process.env.GA_TRACKING_IDf,
+  });
 }
 
 export let handle = {
@@ -35,16 +43,22 @@ export const links: LinksFunction = () => {
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
-  title: "Remix Notes",
+  title: "Comunismo.io",
   viewport: "width=device-width,initial-scale=1",
 });
 
 export default function App() {
   let { locale } = useLoaderData<typeof loader>();
-
   const { i18n } = useTranslation(locale);
 
-  // const {} = useChangeLanguage(locale);
+  const location = useLocation();
+  const { gaTrackingId } = useLoaderData<typeof loader>();
+
+  useEffect(() => {
+    if (gaTrackingId?.length) {
+      gtag.pageview(location.pathname, gaTrackingId);
+    }
+  }, [location, gaTrackingId]);
 
   return (
     <html lang={locale} className="h-full" dir={i18n.dir()}>
@@ -53,6 +67,29 @@ export default function App() {
         <Links />
       </head>
       <body className="h-full">
+        {process.env.NODE_ENV === "development" || !gaTrackingId ? null : (
+          <>
+            <script
+              async
+              src={`https://www.googletagmanager.com/gtag/js?id=${gaTrackingId}`}
+            />
+            <script
+              async
+              id="gtag-init"
+              dangerouslySetInnerHTML={{
+                __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', '${gaTrackingId}', {
+                  page_path: window.location.pathname,
+                });
+              `,
+              }}
+            />
+          </>
+        )}
         <Outlet />
         <ScrollRestoration />
         <Scripts />

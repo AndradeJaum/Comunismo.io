@@ -8,7 +8,7 @@ export default function Index() {
   const user = useOptionalUser();
 
   return (
-    <header className="flex h-20 w-screen justify-between text-white	">
+    <header className="flex h-20 w-screen justify-between text-white bg-yellow-light">
       <nav className="flex items-center justify-center gap-1 px-4">
         <Link
           to="/capitalism"
@@ -39,6 +39,12 @@ export default function Index() {
           className="rounded-2xl px-2 py-1 tracking-widest no-underline hover:bg-red-dark"
         >
           {t("readingGuide")}
+        </Link>
+        <Link
+          to="/contact"
+          className="rounded-2xl px-2 py-1 tracking-widest no-underline hover:bg-red-dark"
+        >
+          {t("contact")}
         </Link>
       </nav>
       <div className="px-4">
