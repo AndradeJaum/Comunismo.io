@@ -9,7 +9,7 @@ export default function Index() {
 
   return (
     <div className="h-screen">
-      <header className="flex h-20 w-full justify-between text-white bg-yellow-light">
+      <header className="flex h-40 w-full justify-between text-white bg-red-light">
         <nav className="flex items-center justify-center gap-1 px-4">
           <Link
             to="/capitalism"

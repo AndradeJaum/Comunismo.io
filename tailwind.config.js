@@ -4,19 +4,23 @@ module.exports = {
   theme: {
     colors: {
       red: {
-        light: '#F26D6D',
+        light: "#F26D6D",
         medium: "#F24141",
-        dark: '#F20505',
+        dark: "#F20505",
+      },
+      orange: {
+        dark: "#E55E00",
+        light: "#F5B507",
       },
       yellow: {
-        light: '#F2D027',
-        dark: '#F2E30F',
+        light: "#F2D027",
+        dark: "#F2E30F",
       },
       white: "#fff",
       black: "#000",
-      chumbo: "#1D1D1D"
+      chumbo: "#1D1D1D",
     },
-  
+
     extend: {},
   },
   plugins: [],
