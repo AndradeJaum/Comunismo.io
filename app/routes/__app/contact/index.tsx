@@ -24,43 +24,53 @@ export default function Index() {
 
   return (
     <div className=" h-full ">
-      <div className="w-2/5 rounded-md bg-chumbo flex flex-col items-center mx-auto py-8">
-        <h1 className="text-white text-2xl mb-8">This is the Contact page</h1>
+      <div className="w-2/5 bg-chumbo flex flex-col items-center mx-auto py-8 shadow-2xl shadow-chumbo">
+        <h1 className="text-white text-3xl tracking-widest mb-8 font-extrabold">
+          CONTACT PAGE
+        </h1>
         <Form
           onSubmit={handleSubmit}
           replace={false}
           id="contact-form"
-          className="w-3/5 grid items-center mx-auto"
+          className="w-3/5 grid items-center mx-auto text-gray100"
         >
           <input
             type="text"
             name="name"
             id="name"
             placeholder="Name"
-            className="rounded-md p-2.5 outline-none my-1.5"
+            autoComplete="off"
+            className="bg-chumbo py-2.5 outline-none my-1.5 border-b border-gray300 hover:border-yellow_dark focus:border-yellow_dark"
           />
           <input
             type="tel"
             name="phone"
             id="phone"
             placeholder="Phone"
-            className="rounded-md p-2.5 outline-none my-1.5"
+            autoComplete="off"
+            className="bg-chumbo py-2.5 outline-none my-1.5 border-b border-gray300 hover:border-yellow_dark focus:border-yellow_dark"
           />
           <input
             type="email"
             name="email"
             id="email"
             placeholder="Email"
-            className="rounded-md p-2.5 outline-none my-1.5"
+            autoComplete="off"
+            className="bg-chumbo py-2.5 outline-none my-1.5 border-b border-gray300 hover:border-yellow_dark focus:border-yellow_dark"
           />
 
           <textarea
             name="message"
             id="message"
             placeholder="Message"
-            rows={5}
-            className="rounded-md p-2.5  outline-none resize-none my-1.5"
+            autoComplete="off"
+            rows={1}
+            className="bg-chumbo py-2.5 outline-none my-1.5 border-b border-gray300 resize-none	hover:border-yellow_dark focus:border-yellow_dark"
           />
+
+          <button className="bg-chumbo py-2.5  my-8 hover:text-yellow_dark border border-t-0 border-l-0 border-gray300 	hover:border-yellow_dark font-semibold tracking-wide">
+            SEND
+          </button>
         </Form>
       </div>
       <Outlet />
