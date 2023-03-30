@@ -9,46 +9,50 @@ export default function Index() {
 
   return (
     <div className="h-screen">
-      <header className="flex h-40 w-full justify-between text-white bg-red-light">
-        <nav className="flex items-center justify-center gap-1 px-4">
-          <Link
-            to="/capitalism"
-            className="rounded-2xl px-2 py-1 tracking-widest no-underline hover:bg-red-dark"
-          >
-            {t("capitalism")}
-          </Link>
-          <Link
-            to="/socialism"
-            className="rounded-2xl px-2 py-1 tracking-widest no-underline hover:bg-red-dark"
-          >
-            {t("socialism")}
-          </Link>
-          <Link
-            to="/communism"
-            className="rounded-2xl px-2 py-1 tracking-widest no-underline hover:bg-red-dark"
-          >
-            {t("communism")}
-          </Link>
-          <Link
-            to="/brazilianParties"
-            className="rounded-2xl px-2 py-1 tracking-widest no-underline hover:bg-red-dark"
-          >
-            {t("brazilianParties")}
-          </Link>
-          <Link
-            to="/readingGuide"
-            className="rounded-2xl px-2 py-1 tracking-widest no-underline hover:bg-red-dark"
-          >
-            {t("readingGuide")}
-          </Link>
-          <Link
-            to="/contact"
-            className="rounded-2xl px-2 py-1 tracking-widest no-underline hover:bg-red-dark"
-          >
-            {t("contact")}
-          </Link>
-        </nav>
-        <div className="px-4">
+      <header className="flex p-2 h-40 w-full justify-between text-chumbo bg-yellow_dark">
+        <div className="w-1/12">language</div>
+        <div className="flex flex-col items-center justify-end">
+          <div className="text-5xl flex">LOGO</div>
+          <nav className="flex items-end gap-6 px-4 ">
+            <Link
+              to="/capitalism"
+              className="py-3 tracking-widest no-underline hover:border-b-2 hover:border-red_dark"
+            >
+              {t("capitalism")}
+            </Link>
+            <Link
+              to="/socialism"
+              className="py-3 tracking-widest no-underline hover:border-b-2 hover:border-red_dark"
+            >
+              {t("socialism")}
+            </Link>
+            <Link
+              to="/communism"
+              className="py-3 tracking-widest no-underline hover:border-b-2 hover:border-red_dark"
+            >
+              {t("communism")}
+            </Link>
+            <Link
+              to="/brazilianParties"
+              className="py-3 tracking-widest no-underline hover:border-b-2 hover:border-red_dark"
+            >
+              {t("brazilianParties")}
+            </Link>
+            <Link
+              to="/readingGuide"
+              className="py-3 tracking-widest no-underline hover:border-b-2 hover:border-red_dark"
+            >
+              {t("readingGuide")}
+            </Link>
+            <Link
+              to="/contact"
+              className="py-3 tracking-widest no-underline hover:border-b-2 hover:border-red_dark"
+            >
+              {t("contact")}
+            </Link>
+          </nav>
+        </div>
+        <div className="px-4 w-1/12">
           {user ? (
             <Link
               to="/notes"
