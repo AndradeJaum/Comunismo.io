@@ -10,7 +10,7 @@ export default function Index() {
   return (
     <div className="h-screen">
       <header className="flex p-2 h-40 w-full justify-between text-chumbo bg-yellow_dark">
-        <div className="w-1/12">language</div>
+        <div className="w-1/5 bg-red_dark">Language</div>
         <div className="flex flex-col items-center justify-end">
           <div className="text-5xl flex">LOGO</div>
           <nav className="flex items-end gap-6 px-4 ">
@@ -52,7 +52,8 @@ export default function Index() {
             </Link>
           </nav>
         </div>
-        <div className="px-4 w-1/12">
+        <div className="w-1/5 bg-red_dark">Searche</div>
+        {/* <div className="px-4 w-1/12">
           {user ? (
             <Link
               to="/notes"
@@ -76,7 +77,7 @@ export default function Index() {
               </Link>
             </div>
           )}
-        </div>
+        </div> */}
       </header>
       <Outlet />
     </div>
