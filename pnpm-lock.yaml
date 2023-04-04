@@ -34,6 +34,9 @@ dependencies:
   isbot:
     specifier: ^3.6.5
     version: 3.6.5
+  keen-slider:
+    specifier: ^6.8.5
+    version: 6.8.5
   react:
     specifier: ^18.2.0
     version: 18.2.0
@@ -6595,6 +6598,10 @@ packages:
       array-includes: 3.1.6
       object.assign: 4.1.4
     dev: true
+
+  /keen-slider@6.8.5:
+    resolution: {integrity: sha512-9yoosfffgTCrkmbX8kCUMWsn9KDgPSkxBof5/0yXde001D1xao7i9ppfxQCCK0MLnoCa+Rdssby0jFbTTUM4rw==}
+    dev: false
 
   /keyv@4.5.2:
     resolution: {integrity: sha512-5MHbFaKn8cNSmVW7BYnijeAVlE4cYA/SVkifVgrh7yotnfhKmjuXpDKjrABLnT0SfHWV21P8ow07OGfRrNDg8g==}

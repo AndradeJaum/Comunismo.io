@@ -1,10 +1,22 @@
 import { useTranslation } from "react-i18next";
+import React, { useState } from "react";
+import "keen-slider/keen-slider.min.css";
+import { useKeenSlider } from "keen-slider/react";
 
 export default function Comunismo() {
   let { t } = useTranslation();
 
+  const [sliderRef] = useKeenSlider({
+    mode: "free-snap",
+    slides: {
+      origin: "auto",
+      perView: 4,
+      spacing: 20,
+    },
+  });
+
   return (
-    <main className="bg-background text-gray100">
+    <main className="bg-background text-gray100 w-full">
       <div className="flex w-full min-h-screen">
         <div className="w-2/3">
           <div className="text-center p-4 w-4/5 mx-auto my-32">
@@ -72,9 +84,24 @@ export default function Comunismo() {
         </div>
       </div>
 
-      <div className="">
-        Carrosel
-        <div>Loren oren Loren</div>
+      <div className="w-full my-16 p-4">
+        <h4 className="p-4 text-x2 font-medium">PINCIPAIS LÍDERES</h4>
+        <div className="flex">
+          <div className="w-1/4"></div>
+          <div
+            ref={sliderRef}
+            className="keen-slider flex overflow-x-hidden w-full p-4 h-[400px]"
+          >
+            <div className="keen-slider__slide bg-gray100 ml-24">1</div>
+            <div className="keen-slider__slide bg-gray100">2</div>
+            <div className="keen-slider__slide bg-gray100">3</div>
+            <div className="keen-slider__slide bg-gray100">4</div>
+            <div className="keen-slider__slide bg-gray100">5</div>
+            <div className="keen-slider__slide bg-gray100">5</div>
+            <div className="keen-slider__slide bg-gray100">5</div>
+            <div className="keen-slider__slide bg-gray100">5</div>
+          </div>
+        </div>
       </div>
     </main>
   );
