@@ -1,51 +1,54 @@
 import { useTranslation } from "react-i18next";
 import React, { useState } from "react";
-import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
+import "keen-slider/keen-slider.min.css";
 import { Swiper, SwiperRef, SwiperSlide } from "swiper/react";
-
-const products = [
-  {
-    name: "Cras sed",
-    description: "Feugiat nibh sed pulvinar proin",
-    price: "$ 12.99",
-    cal: "185kcal",
-  },
-  {
-    name: "Consequat",
-    description: "Nibh tellus molestie nunc non",
-    price: "$ 8.95",
-    cal: "185kcal",
-  },
-  {
-    name: "Sollicitudin",
-    description: "Id porta nibh venenatis cras sed",
-    price: "$ 5.49",
-    cal: "185kcal",
-  },
-];
 
 export default function Comunismo() {
   let { t } = useTranslation();
 
-  const [sliderRef] = useKeenSlider({
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [loaded, setLoaded] = useState(false);
+
+  const [sliderRef, instanceRef] = useKeenSlider({
     mode: "free-snap",
     slides: {
       origin: "auto",
       perView: 4,
       spacing: 20,
     },
+    slideChanged(slider) {
+      setCurrentSlide(slider.track.details.rel);
+    },
+    created() {
+      setLoaded(true);
+    },
   });
 
-  const [swiper, setSwiper] = useState< any| null>(null);
-
-  const nextSlideHandler = () => {
-    swiper?.slideNext();
-  };
-
-  const prevSlideHandler = () => {
-    swiper.slidePrev();
-  };
+  function Arrow(props: {
+    disabled: any;
+    onClick: React.MouseEventHandler<SVGSVGElement> | undefined;
+    left: any;
+  }) {
+    const disabeld = props.disabled ? " arrow--disabled" : "";
+    return (
+      <svg
+        onClick={props.onClick}
+        className={`arrow w-10 h-10 absolute top-2/4 -translate-y-2/4 fill-red ${
+          props.left ? "arrow--left" : "arrow--right"
+        } ${disabeld}`}
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+      >
+        {props.left && (
+          <path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z" />
+        )}
+        {!props.left && (
+          <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" />
+        )}
+      </svg>
+    );
+  }
 
   return (
     <main className="bg-background text-gray100 w-full">
@@ -119,7 +122,30 @@ export default function Comunismo() {
       <div className="w-full my-16 p-4">
         <h4 className="p-4 text-x2 font-medium">PINCIPAIS LÍDERES</h4>
         <div className="flex">
-          <div className="w-1/4"></div>
+          <div className="relative w-1/5 h-auto">
+            {loaded && instanceRef.current && (
+              <>
+                <Arrow
+                  left
+                  onClick={(e: { stopPropagation: () => any }) =>
+                    e.stopPropagation() || instanceRef.current?.prev()
+                  }
+                  disabled={currentSlide === 0}
+                />
+                <Arrow
+                  onClick={(e: { stopPropagation: () => any }) =>
+                    e.stopPropagation() || instanceRef.current?.next()
+                  }
+                  disabled={
+                    currentSlide ===
+                    instanceRef.current.track.details.slides.length - 1
+                  }
+                  left={undefined}
+                />
+              </>
+            )}
+          </div>
+
           <div
             ref={sliderRef}
             className="keen-slider flex overflow-x-hidden w-full p-4 h-[400px]"
@@ -132,65 +158,10 @@ export default function Comunismo() {
             <div className="keen-slider__slide bg-gray100">5</div>
             <div className="keen-slider__slide bg-gray100">5</div>
             <div className="keen-slider__slide bg-gray100">5</div>
+            <div className="keen-slider__slide bg-gray100">5</div>
+            <div className="keen-slider__slide bg-gray100">5</div>
+            <div className="keen-slider__slide bg-gray100">5</div>
           </div>
-        </div>
-
-        <div className="slider-container">
-          <Swiper
-            spaceBetween={50}
-            slidesPerView={4}
-            scrollbar={{ draggable: true }}
-            className="slider"
-            grabCursor={true}
-            touchEventsTarget="container"
-            onSwiper={(s: any) => {
-              setSwiper(s);
-            }}
-            breakpoints={{
-              200: {
-                slidesPerView: 2,
-                spaceBetween: 5,
-              },
-              450: {
-                slidesPerView: 2,
-                spaceBetween: 20,
-              },
-              910: {
-                slidesPerView: 4,
-                spaceBetween: 20,
-              },
-              1200: {
-                slidesPerView: 4,
-                spaceBetween: 50,
-              },
-            }}
-          >
-            {products.map((prod) => (
-              <SwiperSlide key={prod.name} className="slide-item">
-                <a href="/">
-                  <img src={prod.name} alt={prod.name} />
-                  <span className="cal">{prod.cal}</span>
-                  <h3>{prod.name}</h3>
-                  <p className="paragraph">{prod.description}</p>
-                  <span className="price">{prod.price}</span>
-                </a>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-          <button
-            onClick={prevSlideHandler}
-            className="arrow arrow-left"
-            title="slide anterior"
-          >
-            SETA AQUI
-          </button>
-          <button
-            onClick={nextSlideHandler}
-            className="arrow arrow-right"
-            title="slide posterior"
-          >
-            SETA AQUI
-          </button>
         </div>
       </div>
     </main>
