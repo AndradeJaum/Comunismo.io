@@ -2,6 +2,28 @@ import { useTranslation } from "react-i18next";
 import React, { useState } from "react";
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
+import { Swiper, SwiperRef, SwiperSlide } from "swiper/react";
+
+const products = [
+  {
+    name: "Cras sed",
+    description: "Feugiat nibh sed pulvinar proin",
+    price: "$ 12.99",
+    cal: "185kcal",
+  },
+  {
+    name: "Consequat",
+    description: "Nibh tellus molestie nunc non",
+    price: "$ 8.95",
+    cal: "185kcal",
+  },
+  {
+    name: "Sollicitudin",
+    description: "Id porta nibh venenatis cras sed",
+    price: "$ 5.49",
+    cal: "185kcal",
+  },
+];
 
 export default function Comunismo() {
   let { t } = useTranslation();
@@ -14,6 +36,16 @@ export default function Comunismo() {
       spacing: 20,
     },
   });
+
+  const [swiper, setSwiper] = useState< any| null>(null);
+
+  const nextSlideHandler = () => {
+    swiper?.slideNext();
+  };
+
+  const prevSlideHandler = () => {
+    swiper.slidePrev();
+  };
 
   return (
     <main className="bg-background text-gray100 w-full">
@@ -101,6 +133,64 @@ export default function Comunismo() {
             <div className="keen-slider__slide bg-gray100">5</div>
             <div className="keen-slider__slide bg-gray100">5</div>
           </div>
+        </div>
+
+        <div className="slider-container">
+          <Swiper
+            spaceBetween={50}
+            slidesPerView={4}
+            scrollbar={{ draggable: true }}
+            className="slider"
+            grabCursor={true}
+            touchEventsTarget="container"
+            onSwiper={(s: any) => {
+              setSwiper(s);
+            }}
+            breakpoints={{
+              200: {
+                slidesPerView: 2,
+                spaceBetween: 5,
+              },
+              450: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              910: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+              },
+              1200: {
+                slidesPerView: 4,
+                spaceBetween: 50,
+              },
+            }}
+          >
+            {products.map((prod) => (
+              <SwiperSlide key={prod.name} className="slide-item">
+                <a href="/">
+                  <img src={prod.name} alt={prod.name} />
+                  <span className="cal">{prod.cal}</span>
+                  <h3>{prod.name}</h3>
+                  <p className="paragraph">{prod.description}</p>
+                  <span className="price">{prod.price}</span>
+                </a>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+          <button
+            onClick={prevSlideHandler}
+            className="arrow arrow-left"
+            title="slide anterior"
+          >
+            SETA AQUI
+          </button>
+          <button
+            onClick={nextSlideHandler}
+            className="arrow arrow-right"
+            title="slide posterior"
+          >
+            SETA AQUI
+          </button>
         </div>
       </div>
     </main>
