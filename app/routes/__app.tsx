@@ -10,14 +10,20 @@ export default function Index() {
   return (
     <div className="h-screen">
       <header className="flex p-2 h-24 w-full justify-between text-chumbo bg-gray100 font-medium">
-        <div className="w-1/5">Language</div>
-        <div className="flex flex-col items-center justify-end">
+        <div className="">Language</div>
+        <div className="flex flex-col items-center justify-end  w-4/5">
           <nav className="flex items-end gap-6 px-4 ">
             <Link
-              to="/capitalism"
+              to="/home"
               className="py-3 tracking-widest no-underline hover:border-b-4 hover:border-red"
             >
-              {t("capitalism")}
+              {t("home")}
+            </Link>
+            <Link
+              to="/communism"
+              className="py-3 tracking-widest no-underline hover:border-b-4 hover:border-red"
+            >
+              {t("communism")}
             </Link>
             <Link
               to="/socialism"
@@ -26,10 +32,10 @@ export default function Index() {
               {t("socialism")}
             </Link>
             <Link
-              to="/communism"
+              to="/capitalism"
               className="py-3 tracking-widest no-underline hover:border-b-4 hover:border-red"
             >
-              {t("communism")}
+              {t("capitalism")}
             </Link>
             <Link
               to="/brazilianParties"
@@ -51,7 +57,7 @@ export default function Index() {
             </Link>
           </nav>
         </div>
-        <div className="w-1/5">Search</div>
+        <div className="">Search</div>
         {/* <div className="px-4 w-1/12">
           {user ? (
             <Link

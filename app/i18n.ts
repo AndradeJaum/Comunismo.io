@@ -1,6 +1,6 @@
 export default {
-    supportedLngs : [ "en" ,  "es" , "pt" ] , 
-    fallbackLng : "en" , 
+    supportedLngs : [  "es" , "pt" ] , 
+    fallbackLng : "pt" , 
     defaultNS : "common" ,
     react : {  useSuspense : false  } , 
 }

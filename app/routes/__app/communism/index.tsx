@@ -2,7 +2,6 @@ import { useTranslation } from "react-i18next";
 import React, { useState } from "react";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
-import { Swiper, SwiperRef, SwiperSlide } from "swiper/react";
 import { ArrowLeftIcon, ArrowRightIcon } from "@radix-ui/react-icons";
 
 export default function Comunismo() {
@@ -28,7 +27,7 @@ export default function Comunismo() {
 
   function Arrow(props: {
     disabled: any;
-    onClick: React.MouseEventHandler<SVGSVGElement> | undefined;
+    onClick: React.MouseEventHandler<HTMLDivElement> | undefined;
     left: any;
   }) {
     const disabeld = props.disabled ? " arrow--disabled" : "";
@@ -36,12 +35,12 @@ export default function Comunismo() {
       <>
         <div
           onClick={props.onClick}
-          className={`arrow w-10 h-10 fill-red ${
+          className={`arrow flex justify-center ${
             props.left ? <ArrowLeftIcon /> : <ArrowRightIcon />
           } ${disabeld}`}
         >
-          {props.left && <ArrowLeftIcon />}
-          {!props.left && <ArrowRightIcon />}
+          {props.left && <ArrowLeftIcon className="w-12 h-12 text-red" />}
+          {!props.left && <ArrowRightIcon className="w-12 h-12 text-red" />}
         </div>
       </>
     );
@@ -117,11 +116,11 @@ export default function Comunismo() {
       </div>
 
       <div className="w-full my-16 p-4">
-        <h4 className="p-4 text-x2 font-medium">PINCIPAIS LÍDERES</h4>
+        <h4 className="p-4 text-x2 font-medium text-center">PINCIPAIS LÍDERES</h4>
         <div className="flex">
           <div className="relative w-1/5 h-auto">
             {loaded && instanceRef.current && (
-              <>
+              <div className="h-full flex flex-col justify-center">
                 <Arrow
                   left
                   onClick={(e: { stopPropagation: () => any }) =>
@@ -139,7 +138,7 @@ export default function Comunismo() {
                   }
                   left={undefined}
                 />
-              </>
+              </div>
             )}
           </div>
 
