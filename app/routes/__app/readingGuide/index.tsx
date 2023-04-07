@@ -4,8 +4,8 @@ export default function ReadingGuide() {
   let { t } = useTranslation();
 
   return (
-    <main>
+    <div>
       <h1>{t("readingGuide")}</h1>
-    </main>
+    </div>
   );
 }

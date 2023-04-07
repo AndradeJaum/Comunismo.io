@@ -47,46 +47,75 @@ export default function Socialismo() {
   }
 
   return (
-    <main className="bg-background text-gray100 w-full">
+    <div className="bg-background text-gray100 w-full">
       <div className="flex w-full min-h-screen">
         <div className="w-2/3">
-          <div className="text-center p-4 w-4/5 mx-auto my-32">
+          <section className="text-center p-4 w-4/5 mx-auto my-32">
+            <p className="text-sm text-red_light font-medium">01.</p>
             <h2 className="p-4">O que é o Socialismo?</h2>
             <p className="p-4">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae laborum doloremque voluptate aperiam commodi quam incidunt quod porro, odit animi nam maxime vero quae voluptatum atque! Assumenda necessitatibus itaque sapiente.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+              quasi veritatis quis! Ab debitis iste consectetur corrupti nulla,
+              unde fugiat accusantium impedit earum voluptas eos suscipit atque,
+              fuga ducimus hic. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Minima quasi veritatis quis! Ab debitis iste
+              consectetur corrupti nulla, unde fugiat accusantium impedit earum
+              voluptas eos suscipit atque, fuga ducimus hic. Lorem ipsum dolor
+              sit amet consectetur adipisicing elit. Minima quasi veritatis
+              quis! Ab debitis iste consectetur corrupti nulla, unde fugiat
+              accusantium impedit earum voluptas eos suscipit atque, fuga
+              ducimus hic. Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Minima quasi veritatis quis! Ab debitis iste consectetur
+              corrupti nulla, unde fugiat accusantium impedit earum voluptas eos
+              suscipit atque, fuga ducimus hic.
             </p>
-          </div>
+          </section>
 
-          <div className="text-center p-4 w-4/5 mx-auto my-32">
-            <div className="bg-gray100 w-1/2">
-              <p className="p-4 text-background text-lg font-bold">
-                CONCEITOS DO
-              </p>
+          <section className="text-center p-4 w-4/5 mx-auto my-16">
+            <div className="text-center p-4 w-4/5 mx-auto mb-16">
+              <p className="text-sm text-red_light font-medium text-left mb-4">02.</p>
+              <div className="bg-gray100 w-1/2">
+                <p className="p-4 text-background text-lg font-bold">
+                  CONCEITOS DO
+                </p>
+              </div>
+              <div className="border border-gray100 w-1/2">
+                <p className="p-4 text-lg font-bold">SOCIALISMO</p>
+              </div>
             </div>
-            <div className="border border-gray100 w-1/2">
-              <p className="p-4 text-lg font-bold">SOCIALISMO</p>
-            </div>
-          </div>
-
-          <div className="text-center p-4 w-4/5 mx-auto my-16">
-            <h3 className="p-4">O que é o Socialismo?</h3>
             <p className="p-4">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae laborum doloremque voluptate aperiam commodi quam incidunt quod porro, odit animi nam maxime vero quae voluptatum atque! Assumenda necessitatibus itaque sapiente.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+              quasi veritatis quis! Ab debitis iste consectetur corrupti nulla,
+              unde fugiat accusantium impedit earum voluptas eos suscipit atque,
+              fuga ducimus hic. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Minima quasi veritatis quis! Ab debitis iste
+              consectetur corrupti nulla, unde fugiat accusantium impedit earum
+              voluptas eos suscipit atque, fuga ducimus hic. Lorem ipsum dolor
+              sit amet consectetur adipisicing elit. Minima quasi veritatis
+              quis! Ab debitis iste consectetur corrupti nulla, unde fugiat
+              accusantium impedit earum voluptas eos suscipit atque, fuga
+              ducimus hic. Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Minima quasi veritatis quis! Ab debitis iste consectetur
+              corrupti nulla, unde fugiat accusantium impedit earum voluptas eos
+              suscipit atque, fuga ducimus hic.
             </p>
-          </div>
+          </section>
         </div>
 
-        <div className="flex w-1/3 ">
+        <section className="flex w-1/3 ">
           <div className=" w-full">
-            <h1 className="rotate-90 origin-left translate-x-1/2 my-16 text-plus text-red font-bold">
+            <h1 className="rotate-90 transform origin-left translate-x-1/2 my-16 text-plus text-red font-bold">
               SOCIALISMO
             </h1>
           </div>
-        </div>
+        </section>
       </div>
 
-      <div className="w-full my-16 p-4">
-        <h4 className="p-4 text-x2 font-medium text-center">PINCIPAIS LÍDERES</h4>
+      <section className="w-full my-16 p-4">
+        <p className="text-sm text-red_light font-medium text-center">03.</p>
+        <h4 className="p-4 text-x2 font-medium text-center">
+          PINCIPAIS LÍDERES
+        </h4>
         <div className="flex">
           <div className="relative w-1/5 h-auto">
             {loaded && instanceRef.current && (
@@ -129,7 +158,7 @@ export default function Socialismo() {
             <div className="keen-slider__slide bg-gray100">5</div>
           </div>
         </div>
-      </div>
-    </main>
+      </section>
+    </div>
   );
 }

@@ -11,7 +11,7 @@ export default function Index() {
     <div className="h-screen">
       <header className="flex p-2 h-24 w-full justify-between text-chumbo bg-gray100 font-medium">
         <div className="">Language</div>
-        <div className="flex flex-col items-center justify-end  w-4/5">
+        <div className="flex flex-col items-center justify-end w-4/5">
           <nav className="flex items-end gap-6 px-4 ">
             <Link
               to="/home"
