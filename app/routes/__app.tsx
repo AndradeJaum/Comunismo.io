@@ -14,7 +14,7 @@ export default function Index() {
         <div className="flex flex-col items-center justify-end w-4/5">
           <nav className="flex items-end gap-6 px-4 ">
             <Link
-              to="/home"
+              to="/#"
               className="py-3 tracking-widest no-underline hover:border-b-4 hover:border-red"
             >
               {t("home")}
