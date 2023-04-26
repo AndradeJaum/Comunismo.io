@@ -1,10 +1,11 @@
 import { useTranslation } from "react-i18next";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import { ArrowLeftIcon, ArrowRightIcon } from "@radix-ui/react-icons";
 
 export default function Comunismo() {
+
   let { t } = useTranslation();
 
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -50,7 +51,10 @@ export default function Comunismo() {
     <div className="bg-background text-gray100 w-full">
       <div className="flex w-full min-h-screen">
         <div className="w-2/3">
-          <section className="text-center p-4 w-4/5 mx-auto my-32">
+          <section
+            className="text-center p-4 w-4/5 mx-auto my-32"
+            data-aos="fade-down"
+          >
             <p className="text-sm text-red_light font-medium">01.</p>
             <h2 className="p-4">O que é o Comunismo?</h2>
             <p className="p-4">
@@ -75,7 +79,9 @@ export default function Comunismo() {
 
           <section className="text-center p-4 w-4/5 mx-auto my-16">
             <div className="text-center p-4 w-4/5 mx-auto mb-16">
-              <p className="text-sm text-red_light font-medium text-left mb-4">02.</p>
+              <p className="text-sm text-red_light font-medium text-left mb-4">
+                02.
+              </p>
               <div className="bg-gray100 w-1/2">
                 <p className="p-4 text-background text-lg font-bold">
                   CONCEITOS DO

@@ -1,5 +1,5 @@
 {
-  "name": "Comunismo-74cf",
+  "name": "Comunism.io",
   "private": true,
   "sideEffects": false,
   "scripts": {
@@ -35,7 +35,9 @@
     "@remix-run/react": "^1.13.0",
     "@remix-run/serve": "^1.13.0",
     "@remix-run/server-runtime": "^1.13.0",
+    "@types/aos": "^3.0.4",
     "bcryptjs": "^2.4.3",
+    "framer-motion": "^10.11.6",
     "i18next": "^22.4.10",
     "i18next-browser-languagedetector": "^7.0.1",
     "i18next-fs-backend": "^2.1.1",
@@ -45,9 +47,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-i18next": "^12.2.0",
-    "react-swiper": "^0.1.5",
     "remix-i18next": "^5.1.0",
-    "swiper": "^8.4.5",
     "tiny-invariant": "^1.3.1"
   },
   "devDependencies": {
@@ -83,7 +83,7 @@
     "prettier-plugin-tailwindcss": "^0.2.1",
     "prisma": "^4.9.0",
     "start-server-and-test": "^1.15.2",
-    "tailwindcss": "^3.2.4",
+    "tailwindcss": "^3.3.2",
     "ts-node": "^10.9.1",
     "tsconfig-paths": "^4.1.2",
     "typescript": "^4.9.4",
