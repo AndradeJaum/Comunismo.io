@@ -5,7 +5,7 @@ export default function Index() {
   let { t } = useTranslation();
 
   return (
-    <div className="h-screen">
+    <>
       <header className="flex p-2 h-24 w-full justify-between text-background bg-gray100">
         <div className="">Language</div>
         <div className="flex flex-col items-center justify-end w-4/5">
@@ -57,6 +57,6 @@ export default function Index() {
         <div className="">Search</div>
       </header>
       <Outlet />
-    </div>
+    </>
   );
 }
