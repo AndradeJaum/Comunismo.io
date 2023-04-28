@@ -4,8 +4,9 @@ export default function BrazilianParties() {
   let { t } = useTranslation();
 
   return (
-    <main>
-      <h1>{t("brazilianParties")}</h1>
-    </main>
+    <div className="bg-background">
+      <section></section>
+      <section></section>
+    </div>
   );
 }

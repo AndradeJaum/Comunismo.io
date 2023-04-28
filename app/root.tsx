@@ -12,7 +12,6 @@ import {
 } from "@remix-run/react";
 
 import tailwindStylesheetUrl from "./styles/tailwind.css";
-import { getUser } from "./session.server";
 
 import useTranslation from "./hooks/useChangeLanguage";
 import i18next from "~/i18next.server";
@@ -24,7 +23,6 @@ export async function loader({ request }: LoaderArgs) {
   let locale = await i18next.getLocale(request);
   return json({
     locale,
-    user: await getUser(request),
     gaTrackingId: process.env.GA_TRACKING_IDf,
   });
 }

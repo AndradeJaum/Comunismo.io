@@ -23,9 +23,9 @@ export default function Index() {
   };
 
   return (
-    <div className=" h-full ">
-      <div className="w-2/5 bg-chumbo flex flex-col items-center mx-auto py-8 shadow-2xl shadow-chumbo">
-        <h1 className="text-white text-3xl tracking-widest mb-8 font-extrabold">
+    <div className=" h-full bg-background">
+      <div className="w-2/5 flex flex-col items-center mx-auto py-8">
+        <h1 className="text-gray100 text-x2 tracking-widest mb-8 font-extrabold">
           CONTACT PAGE
         </h1>
         <Form
@@ -40,7 +40,7 @@ export default function Index() {
             id="name"
             placeholder="Name"
             autoComplete="off"
-            className="bg-chumbo py-2.5 outline-none my-1.5 border-b border-gray300 hover:border-yellow_dark focus:border-yellow_dark"
+            className="bg-background py-2.5 outline-none my-1.5 border-b hover:border-red_light focus:border-red_light"
           />
           <input
             type="tel"
@@ -48,7 +48,7 @@ export default function Index() {
             id="phone"
             placeholder="Phone"
             autoComplete="off"
-            className="bg-chumbo py-2.5 outline-none my-1.5 border-b border-gray300 hover:border-yellow_dark focus:border-yellow_dark"
+            className="bg-background py-2.5 outline-none my-1.5 border-b hover:border-red_light focus:border-red_light"
           />
           <input
             type="email"
@@ -56,7 +56,7 @@ export default function Index() {
             id="email"
             placeholder="Email"
             autoComplete="off"
-            className="bg-chumbo py-2.5 outline-none my-1.5 border-b border-gray300 hover:border-yellow_dark focus:border-yellow_dark"
+            className="bg-background py-2.5 outline-none my-1.5 border-b hover:border-red_light focus:border-red_light"
           />
 
           <textarea
@@ -65,10 +65,10 @@ export default function Index() {
             placeholder="Message"
             autoComplete="off"
             rows={1}
-            className="bg-chumbo py-2.5 outline-none my-1.5 border-b border-gray300 resize-none	hover:border-yellow_dark focus:border-yellow_dark"
+            className="bg-background py-2.5 outline-none my-1.5 border-b resize-none hover:border-red_light focus:border-red_light"
           />
 
-          <button className="bg-chumbo py-2.5  my-8 hover:text-yellow_dark border border-t-0 border-l-0 border-gray300 	hover:border-yellow_dark font-semibold tracking-wide">
+          <button className="bg-background py-2.5  my-8 border border-t-0 border-l-0 	hover:border-red_light font-semibold tracking-wide">
             SEND
           </button>
         </Form>

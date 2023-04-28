@@ -3,20 +3,20 @@ import { Outlet } from "@remix-run/react";
 export default function home() {
   return (
     <main className="bg-background w-full">
-      <section className="flex justify-between py-32 w-full ">
+      <section className="flex justify-between py-32 w-full">
         <div className="w-1/4">image</div>
         <div className="w-3/4 flex flex-col justify-around items-center relative overflow-x-hidden">
           <h1 className="absolute -top-[6%] left-[10%] text-extra opacity-5 text-gray100 font-bold ">
             COMUNISMO
           </h1>
           <div className="text-center text-gray100 py-16 relative">
-            <p className="text-sm text-red font-medium">01.</p>
+            <p className="text-sm text-red_light font-medium">01.</p>
             <div className="w-full flex ">
               <div className="w-full m-auto"></div>
               <h2 className="p-4 whitespace-nowrap text-x2">
                 O que é o Comunismo?
               </h2>
-              <div className="w-full h-[2px] bg-red m-auto"></div>
+              <div className="w-full h-[2px] bg-red_light m-auto"></div>
             </div>
             <div className="w-2/3 m-auto">
               <p className="p-4">
@@ -39,12 +39,12 @@ export default function home() {
               </p>
             </div>
           </div>
-          <div className="text-red">seta</div>
+          <div className="text-red_light">seta</div>
         </div>
       </section>
       <section className="flex justify-between py-32 w-full ">
         <div className="w-3/4 flex flex-col justify-around items-center relative overflow-x-hidden">
-          <h1 className="absolute -top-[6%] left-[25%] text-extra opacity-5 text-gray100 font-bold ">
+          <h1 className="absolute -top-[6%]  text-extra opacity-5 text-gray100 font-bold ">
             SOCIALISMO
           </h1>
           <div className="text-center text-gray100 py-16 relative">
@@ -80,7 +80,7 @@ export default function home() {
           </div>
           <div className="text-red">seta</div>
         </div>
-        <div className="w-1/4 ">image</div>
+        <div className="w-1/4">image</div>
       </section>
       <section className="flex justify-between py-32 w-full ">
         <div className="w-1/4">image</div>

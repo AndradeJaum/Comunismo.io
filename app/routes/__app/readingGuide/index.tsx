@@ -4,7 +4,8 @@ export default function ReadingGuide() {
   let { t } = useTranslation();
 
   return (
-    <div>
+    <div className="bg-background h-screen">
+      <h1 className="text-">teste</h1>
       <h1>{t("readingGuide")}</h1>
     </div>
   );

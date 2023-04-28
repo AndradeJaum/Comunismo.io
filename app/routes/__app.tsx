@@ -1,15 +1,12 @@
 import { Link, Outlet } from "@remix-run/react";
-import { useOptionalUser } from "~/utils";
 import { useTranslation } from "react-i18next";
 
 export default function Index() {
   let { t } = useTranslation();
 
-  const user = useOptionalUser();
-
   return (
     <div className="h-screen">
-      <header className="flex p-2 h-24 w-full justify-between text-chumbo bg-gray100 font-medium">
+      <header className="flex p-2 h-24 w-full justify-between text-background bg-gray100">
         <div className="">Language</div>
         <div className="flex flex-col items-center justify-end w-4/5">
           <nav className="flex items-end gap-6 px-4 ">
@@ -58,31 +55,6 @@ export default function Index() {
           </nav>
         </div>
         <div className="">Search</div>
-        {/* <div className="px-4 w-1/12">
-          {user ? (
-            <Link
-              to="/notes"
-              className="border-transparent text-yellow-700 hover:bg-yellow-50 flex items-center justify-center rounded-md border bg-white px-4 py-3 text-base font-medium shadow-sm sm:px-8 "
-            >
-              View Notes for {user.email}
-            </Link>
-          ) : (
-            <div className="">
-              <Link
-                to="/join"
-                className="border-transparent text-yellow-700 hover:bg-yellow-50 flex items-center justify-center rounded-md border bg-white text-base font-medium text-red-dark  shadow-sm "
-              >
-                Sign up
-              </Link>
-              <Link
-                to="/login"
-                className="bg-yellow-500 hover:bg-yellow-600 flex items-center justify-center rounded-md px-4 py-3 font-medium text-white"
-              >
-                Log In
-              </Link>
-            </div>
-          )}
-        </div> */}
       </header>
       <Outlet />
     </div>
