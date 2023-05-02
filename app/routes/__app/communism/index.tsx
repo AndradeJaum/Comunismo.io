@@ -155,7 +155,7 @@ export default function Comunismo() {
             ref={sliderRef}
             className="keen-slider flex overflow-x-hidden w-full p-4 h-[400px]"
           >
-            <div className="keen-slider__slide bg-gray100 ml-24">1</div>
+            <div className="keen-slider__slide bg-gray100 ">1</div>
             <div className="keen-slider__slide bg-gray100">2</div>
             <div className="keen-slider__slide bg-gray100">3</div>
             <div className="keen-slider__slide bg-gray100">4</div>
