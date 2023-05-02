@@ -5,7 +5,6 @@ import "keen-slider/keen-slider.min.css";
 import { ArrowLeftIcon, ArrowRightIcon } from "@radix-ui/react-icons";
 
 export default function Comunismo() {
-
   let { t } = useTranslation();
 
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -56,7 +55,7 @@ export default function Comunismo() {
             data-aos="fade-down"
           >
             <p className="text-sm text-red_light font-medium">01.</p>
-            <h2 className="p-4">O que é o Comunismo?</h2>
+            <h2 className="mb-4 text-lg">O que é o Comunismo?</h2>
             <p className="p-4">
               O comunismo é uma teoria política e econômica que busca
               estabelecer uma sociedade igualitária, na qual os meios de
@@ -79,7 +78,7 @@ export default function Comunismo() {
 
           <section className="text-center p-4 w-4/5 mx-auto my-16">
             <div className="text-center p-4 w-4/5 mx-auto mb-16">
-              <p className="text-sm text-red_light font-medium text-left mb-4">
+              <p className="text-sm text-red_light font-medium text-left">
                 02.
               </p>
               <div className="bg-gray100 w-1/2">
@@ -112,7 +111,7 @@ export default function Comunismo() {
           </section>
         </div>
 
-        <section className="flex w-1/3 ">
+        <section className="flex w-1/3">
           <div className=" w-full">
             <h1 className="rotate-90 transform origin-left translate-x-1/2 my-16 text-plus text-red font-bold">
               COMUNISMO
@@ -121,9 +120,9 @@ export default function Comunismo() {
         </section>
       </div>
 
-      <section className="w-full my-16 p-4">
+      <section className="w-full my-16 ">
         <p className="text-sm text-red_light font-medium text-center">03.</p>
-        <h4 className="p-4 text-x2 font-medium text-center">
+        <h4 className="mb-4 text-x2 font-medium text-center">
           PINCIPAIS LÍDERES
         </h4>
         <div className="flex">

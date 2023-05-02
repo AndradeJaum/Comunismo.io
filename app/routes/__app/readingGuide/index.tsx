@@ -47,7 +47,7 @@ export default function ReadingGuide() {
 
   return (
     <main className="bg-background text-gray100 ">
-      <section className="mx-auto  w-1/2 text-center p-8 pt-32">
+      <section className="mx-auto w-1/2 text-center p-8 pt-32">
         <p className="text-sm text-red_light font-medium text-center">01.</p>
         <h1 className="text-x2 mb-4">Como começar a estudar?</h1>
         <p>
@@ -63,7 +63,7 @@ export default function ReadingGuide() {
 
       <section className="w-full my-16 p-4">
         <p className="text-sm text-red_light font-medium text-center">02.</p>
-        <h4 className="p-4 text-x2 font-medium text-center">LEITURA</h4>
+        <h4 className="mb-4 text-x2 font-medium text-center">LEITURA</h4>
         <div className="flex">
           <div className="relative w-[10%] h-auto">
             {loaded && instanceRef.current && (
@@ -110,6 +110,30 @@ export default function ReadingGuide() {
               </div>
             )}
           </div>
+        </div>
+      </section>
+
+      <section className="p-4 my-16 mb-16 w-4/5 m-auto">
+        <div className="text-center">
+          <p className="text-sm text-red_light font-medium text-left">02.</p>
+          <div className="bg-gray100 w-1/4">
+            <p className="p-4 text-background text-lg font-bold">PRINCIPAIS</p>
+          </div>
+          <div className="border border-gray100 w-1/4">
+            <p className="p-4 text-lg font-bold">TEMAS</p>
+          </div>
+        </div>
+
+        <div className="my-16">
+          <ul className="">
+            <li>Loren</li>
+            <li>Loren</li>
+            <li>Loren</li>
+            <li>Loren</li>
+            <li>Loren</li>
+            <li>Loren</li>
+            <li>Loren</li>
+          </ul>
         </div>
       </section>
     </main>
