@@ -49,62 +49,64 @@ export default function Comunismo() {
   return (
     <div className="bg-background text-gray100 w-full">
       <div className="flex w-full min-h-screen">
-        <div className="w-2/3">
+      <div className="w-2/3">
           <section className="text-center p-4 w-4/5 mx-auto my-32">
             <p className="text-sm text-red_light font-medium">01.</p>
-            <h2 className="mb-4 text-lg">O que é o Comunismo?</h2>
-            <p className="p-4">
-              O comunismo é uma teoria política e econômica que busca
-              estabelecer uma sociedade igualitária, na qual os meios de
-              produção são de propriedade coletiva e os bens são distribuídos de
-              forma equitativa entre todos os membros. O comunismo defende a
-              abolição da propriedade privada e do sistema de classes sociais, e
-              propõe a criação de um Estado que garanta a justiça social e o
-              bem-estar de todos os cidadãos. Para os comunistas, o capitalismo
-              é um sistema injusto e opressivo, que explora os trabalhadores em
-              benefício dos proprietários dos meios de produção. O comunismo tem
-              suas raízes no pensamento de filósofos como Karl Marx e Friedrich
-              Engels, e foi implementado em alguns países, como a União
-              Soviética e a China, embora sua aplicação tenha gerado
-              controvérsias e críticas. Mesmo assim, o comunismo continua sendo
-              uma corrente política importante em todo o mundo, sendo objeto de
-              estudos e debates por parte de especialistas e interessados no
-              assunto.
-            </p>
+            <h2 className="mb-4">O que é o Socialismo?</h2>
+            <div className="w-4/5 m-auto">
+              <p className="p-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+                quasi veritatis quis! Ab debitis iste consectetur corrupti
+                nulla, unde fugiat accusantium impedit earum voluptas eos
+                suscipit atque, fuga ducimus hic. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Minima quasi veritatis quis! Ab
+                debitis iste consectetur corrupti nulla, unde fugiat accusantium
+                impedit earum voluptas eos suscipit atque, fuga ducimus hic.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+                quasi veritatis quis! Ab debitis iste consectetur corrupti
+                nulla, unde fugiat accusantium impedit earum voluptas eos
+                suscipit atque, fuga ducimus hic. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Minima quasi veritatis quis! Ab
+                debitis iste consectetur corrupti nulla, unde fugiat accusantium
+                impedit earum voluptas eos suscipit atque, fuga ducimus hic.
+              </p>
+            </div>
           </section>
 
-          <section className="text-center p-4 w-4/5 mx-auto my-16">
-            <div className="text-center p-4 w-4/5 mx-auto mb-16">
-              <p className="text-sm text-red_light font-medium text-left">
-                02.
-              </p>
-              <div className="bg-gray100 w-1/2">
-                <p className="p-4 text-background text-lg font-bold">
-                  CONCEITOS DO
+          <section className="text-center p-4 mb-16 w-4/5 m-auto my-32">
+            <div className="w-2/5 text-center flex flex-col m-auto mb-8">
+              <p className="text-sm text-red_light font-medium">02.</p>
+              <div className="bg-gray100">
+                <p className="py-4 px-16 text-background text-lg font-bold">
+                  PRINCIPAIS
                 </p>
               </div>
-              <div className="border border-gray100 w-1/2">
-                <p className="p-4 text-lg font-bold">COMUNISMO</p>
+              <div className="border border-gray100">
+                <p className="py-4 px-16 text-lg font-bold">TEMAS</p>
               </div>
             </div>
-            <p className="p-4">
-              O comunismo é uma teoria política e econômica que busca
-              estabelecer uma sociedade igualitária, na qual os meios de
-              produção são de propriedade coletiva e os bens são distribuídos de
-              forma equitativa entre todos os membros. O comunismo defende a
-              abolição da propriedade privada e do sistema de classes sociais, e
-              propõe a criação de um Estado que garanta a justiça social e o
-              bem-estar de todos os cidadãos. Para os comunistas, o capitalismo
-              é um sistema injusto e opressivo, que explora os trabalhadores em
-              benefício dos proprietários dos meios de produção. O comunismo tem
-              suas raízes no pensamento de filósofos como Karl Marx e Friedrich
-              Engels, e foi implementado em alguns países, como a União
-              Soviética e a China, embora sua aplicação tenha gerado
-              controvérsias e críticas. Mesmo assim, o comunismo continua sendo
-              uma corrente política importante em todo o mundo, sendo objeto de
-              estudos e debates por parte de especialistas e interessados no
-              assunto.
-            </p>
+            <div className="w-4/5 m-auto">
+              <p className="p-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+                quasi veritatis quis! Ab debitis iste consectetur corrupti
+                nulla, unde fugiat accusantium impedit earum voluptas eos
+                suscipit atque, fuga ducimus hic. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Minima quasi veritatis quis! Ab
+                debitis iste consectetur corrupti nulla, unde fugiat accusantium
+                impedit earum voluptas eos suscipit atque, fuga ducimus hic.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+                quasi veritatis quis! Ab debitis iste consectetur corrupti
+                nulla, unde fugiat accusantium impedit earum voluptas eos
+                suscipit atque, fuga ducimus hic. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Minima quasi veritatis quis! Ab
+                debitis iste consectetur corrupti nulla, unde fugiat accusantium
+                impedit earum voluptas eos suscipit atque, fuga ducimus hic.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Reprehenderit, laboriosam! Vel temporibus architecto laborum
+                illum voluptates repudiandae expedita, nihil maiores quam omnis
+                dolorem blanditiis quidem totam sed minus ut fugiat?
+              </p>
+            </div>
           </section>
         </div>
 

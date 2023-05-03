@@ -38,8 +38,10 @@ export default function ReadingGuide() {
             props.left ? <ArrowLeftIcon /> : <ArrowRightIcon />
           } ${disabeld}`}
         >
-          {props.left && <ArrowLeftIcon className="w-12 h-12 text-red" />}
-          {!props.left && <ArrowRightIcon className="w-12 h-12 text-red" />}
+          {props.left && <ArrowLeftIcon className="w-12 h-12 text-red_light" />}
+          {!props.left && (
+            <ArrowRightIcon className="w-12 h-12 text-red_light" />
+          )}
         </div>
       </>
     );
@@ -113,21 +115,23 @@ export default function ReadingGuide() {
         </div>
       </section>
 
-      <section className="p-4 my-16 mb-16 w-4/5 m-auto">
+      <section className="p-4 my-16 mb-16 w-4/5 m-auto flex justify-center">
         <div className="text-center">
           <p className="text-sm text-red_light font-medium text-left">02.</p>
-          <div className="bg-gray100 w-1/4">
-            <p className="p-4 text-background text-lg font-bold">PRINCIPAIS</p>
+          <div className="bg-gray100">
+            <p className="py-4 px-16 text-background text-lg font-bold">
+              PRINCIPAIS
+            </p>
           </div>
-          <div className="border border-gray100 w-1/4">
-            <p className="p-4 text-lg font-bold">TEMAS</p>
+          <div className="border border-gray100">
+            <p className="py-4 px-16 text-lg font-bold">TEMAS</p>
           </div>
         </div>
       </section>
 
       <section className="w-4/5 my-32 text-center m-auto flex">
         <div className="w-2/3 flex">
-          <div className="w-2/5 bg-gray300"></div>
+          <div className="w-2/5 bg-gray100"></div>
           <div className="w-3/5 ">
             <h1 className="text-x2 mb-4">Partido Teste</h1>
             <p className="p-8">
@@ -156,7 +160,7 @@ export default function ReadingGuide() {
               debitis quo expedita modi nesciunt, ad nobis consectetur.
             </p>
           </div>
-          <div className="w-2/5 bg-gray300"></div>
+          <div className="w-2/5 bg-gray100"></div>
         </div>
       </section>
     </main>

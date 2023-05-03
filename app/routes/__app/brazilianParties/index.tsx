@@ -5,7 +5,7 @@ export default function BrazilianParties() {
 
   return (
     <div className="bg-background text-gray100 w-full">
-      <section className="mx-auto w-1/2 text-center p-8 py-32">
+      <section className="mx-auto w-1/2 text-center p-8 pt-32">
         <p className="text-sm text-red_light font-medium text-center">01.</p>
         <h1 className="text-x2 mb-4">Temos algum Partido?</h1>
         <p>
@@ -18,7 +18,13 @@ export default function BrazilianParties() {
           nesciunt, ad nobis consectetur.
         </p>
       </section>
-      <div className="my-32 mx-auto w-4/5 h-[1px]  bg-red_light"></div>
+
+      <div className="flex my-32 justify-evenly">
+        <div className="w-32 h-32 m-auto -translate-y-1/2 rotate-45 bg-gray100"></div>
+        <div className="mx-auto w-2/5 h-[1px] bg-gray100"></div>
+        <div className="w-32 h-32 m-auto -translate-y-1/2 rotate-45 bg-gray100"></div>
+      </div>
+
       <section className="w-4/5 my-16 text-center m-auto flex">
         <div className="w-2/3 flex">
           <div className="w-2/5 bg-gray300"></div>

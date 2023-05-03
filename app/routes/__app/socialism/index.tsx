@@ -40,7 +40,9 @@ export default function Socialismo() {
           } ${disabeld}`}
         >
           {props.left && <ArrowLeftIcon className="w-12 h-12 text-red_light" />}
-          {!props.left && <ArrowRightIcon className="w-12 h-12 text-red_light" />}
+          {!props.left && (
+            <ArrowRightIcon className="w-12 h-12 text-red_light" />
+          )}
         </div>
       </>
     );
@@ -53,52 +55,60 @@ export default function Socialismo() {
           <section className="text-center p-4 w-4/5 mx-auto my-32">
             <p className="text-sm text-red_light font-medium">01.</p>
             <h2 className="mb-4">O que é o Socialismo?</h2>
-            <p className="p-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-              quasi veritatis quis! Ab debitis iste consectetur corrupti nulla,
-              unde fugiat accusantium impedit earum voluptas eos suscipit atque,
-              fuga ducimus hic. Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Minima quasi veritatis quis! Ab debitis iste
-              consectetur corrupti nulla, unde fugiat accusantium impedit earum
-              voluptas eos suscipit atque, fuga ducimus hic. Lorem ipsum dolor
-              sit amet consectetur adipisicing elit. Minima quasi veritatis
-              quis! Ab debitis iste consectetur corrupti nulla, unde fugiat
-              accusantium impedit earum voluptas eos suscipit atque, fuga
-              ducimus hic. Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Minima quasi veritatis quis! Ab debitis iste consectetur
-              corrupti nulla, unde fugiat accusantium impedit earum voluptas eos
-              suscipit atque, fuga ducimus hic.
-            </p>
+            <div className="w-4/5 m-auto">
+              <p className="p-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+                quasi veritatis quis! Ab debitis iste consectetur corrupti
+                nulla, unde fugiat accusantium impedit earum voluptas eos
+                suscipit atque, fuga ducimus hic. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Minima quasi veritatis quis! Ab
+                debitis iste consectetur corrupti nulla, unde fugiat accusantium
+                impedit earum voluptas eos suscipit atque, fuga ducimus hic.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+                quasi veritatis quis! Ab debitis iste consectetur corrupti
+                nulla, unde fugiat accusantium impedit earum voluptas eos
+                suscipit atque, fuga ducimus hic. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Minima quasi veritatis quis! Ab
+                debitis iste consectetur corrupti nulla, unde fugiat accusantium
+                impedit earum voluptas eos suscipit atque, fuga ducimus hic.
+              </p>
+            </div>
           </section>
 
-          <section className="text-center p-4 w-4/5 mx-auto my-16">
-            <div className="text-center p-4 w-4/5 mx-auto mb-16">
-              <p className="text-sm text-red_light font-medium text-left">02.</p>
-              <div className="bg-gray100 w-1/2">
-                <p className="p-4 text-background text-lg font-bold">
-                  CONCEITOS DO
+          <section className="text-center p-4 mb-16 w-4/5 m-auto my-32">
+            <div className="w-2/5 text-center flex flex-col m-auto mb-8">
+              <p className="text-sm text-red_light font-medium">02.</p>
+              <div className="bg-gray100">
+                <p className="py-4 px-16 text-background text-lg font-bold">
+                  PRINCIPAIS
                 </p>
               </div>
-              <div className="border border-gray100 w-1/2">
-                <p className="p-4 text-lg font-bold">SOCIALISMO</p>
+              <div className="border border-gray100">
+                <p className="py-4 px-16 text-lg font-bold">TEMAS</p>
               </div>
             </div>
-            <p className="p-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-              quasi veritatis quis! Ab debitis iste consectetur corrupti nulla,
-              unde fugiat accusantium impedit earum voluptas eos suscipit atque,
-              fuga ducimus hic. Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Minima quasi veritatis quis! Ab debitis iste
-              consectetur corrupti nulla, unde fugiat accusantium impedit earum
-              voluptas eos suscipit atque, fuga ducimus hic. Lorem ipsum dolor
-              sit amet consectetur adipisicing elit. Minima quasi veritatis
-              quis! Ab debitis iste consectetur corrupti nulla, unde fugiat
-              accusantium impedit earum voluptas eos suscipit atque, fuga
-              ducimus hic. Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Minima quasi veritatis quis! Ab debitis iste consectetur
-              corrupti nulla, unde fugiat accusantium impedit earum voluptas eos
-              suscipit atque, fuga ducimus hic.
-            </p>
+            <div className="w-4/5 m-auto">
+              <p className="p-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+                quasi veritatis quis! Ab debitis iste consectetur corrupti
+                nulla, unde fugiat accusantium impedit earum voluptas eos
+                suscipit atque, fuga ducimus hic. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Minima quasi veritatis quis! Ab
+                debitis iste consectetur corrupti nulla, unde fugiat accusantium
+                impedit earum voluptas eos suscipit atque, fuga ducimus hic.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+                quasi veritatis quis! Ab debitis iste consectetur corrupti
+                nulla, unde fugiat accusantium impedit earum voluptas eos
+                suscipit atque, fuga ducimus hic. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Minima quasi veritatis quis! Ab
+                debitis iste consectetur corrupti nulla, unde fugiat accusantium
+                impedit earum voluptas eos suscipit atque, fuga ducimus hic.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Reprehenderit, laboriosam! Vel temporibus architecto laborum
+                illum voluptates repudiandae expedita, nihil maiores quam omnis
+                dolorem blanditiis quidem totam sed minus ut fugiat?
+              </p>
+            </div>
           </section>
         </div>
 
