@@ -39,8 +39,8 @@ export default function Socialismo() {
             props.left ? <ArrowLeftIcon /> : <ArrowRightIcon />
           } ${disabeld}`}
         >
-          {props.left && <ArrowLeftIcon className="w-12 h-12 text-red" />}
-          {!props.left && <ArrowRightIcon className="w-12 h-12 text-red" />}
+          {props.left && <ArrowLeftIcon className="w-12 h-12 text-red_light" />}
+          {!props.left && <ArrowRightIcon className="w-12 h-12 text-red_light" />}
         </div>
       </>
     );
@@ -52,7 +52,7 @@ export default function Socialismo() {
         <div className="w-2/3">
           <section className="text-center p-4 w-4/5 mx-auto my-32">
             <p className="text-sm text-red_light font-medium">01.</p>
-            <h2 className="p-4">O que é o Socialismo?</h2>
+            <h2 className="mb-4">O que é o Socialismo?</h2>
             <p className="p-4">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
               quasi veritatis quis! Ab debitis iste consectetur corrupti nulla,
@@ -73,7 +73,7 @@ export default function Socialismo() {
 
           <section className="text-center p-4 w-4/5 mx-auto my-16">
             <div className="text-center p-4 w-4/5 mx-auto mb-16">
-              <p className="text-sm text-red_light font-medium text-left mb-4">02.</p>
+              <p className="text-sm text-red_light font-medium text-left">02.</p>
               <div className="bg-gray100 w-1/2">
                 <p className="p-4 text-background text-lg font-bold">
                   CONCEITOS DO
@@ -113,7 +113,7 @@ export default function Socialismo() {
 
       <section className="w-full my-16 p-4">
         <p className="text-sm text-red_light font-medium text-center">03.</p>
-        <h4 className="p-4 text-x2 font-medium text-center">
+        <h4 className="mb-4 text-x2 font-medium text-center">
           PINCIPAIS LÍDERES
         </h4>
         <div className="flex">

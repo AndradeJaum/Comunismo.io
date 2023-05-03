@@ -39,8 +39,8 @@ export default function Comunismo() {
             props.left ? <ArrowLeftIcon /> : <ArrowRightIcon />
           } ${disabeld}`}
         >
-          {props.left && <ArrowLeftIcon className="w-12 h-12 text-red" />}
-          {!props.left && <ArrowRightIcon className="w-12 h-12 text-red" />}
+          {props.left && <ArrowLeftIcon className="w-12 h-12 text-red_light" />}
+          {!props.left && <ArrowRightIcon className="w-12 h-12 text-red_light" />}
         </div>
       </>
     );
@@ -50,10 +50,7 @@ export default function Comunismo() {
     <div className="bg-background text-gray100 w-full">
       <div className="flex w-full min-h-screen">
         <div className="w-2/3">
-          <section
-            className="text-center p-4 w-4/5 mx-auto my-32"
-            data-aos="fade-down"
-          >
+          <section className="text-center p-4 w-4/5 mx-auto my-32">
             <p className="text-sm text-red_light font-medium">01.</p>
             <h2 className="mb-4 text-lg">O que é o Comunismo?</h2>
             <p className="p-4">

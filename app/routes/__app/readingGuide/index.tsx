@@ -123,17 +123,40 @@ export default function ReadingGuide() {
             <p className="p-4 text-lg font-bold">TEMAS</p>
           </div>
         </div>
+      </section>
 
-        <div className="my-16">
-          <ul className="">
-            <li>Loren</li>
-            <li>Loren</li>
-            <li>Loren</li>
-            <li>Loren</li>
-            <li>Loren</li>
-            <li>Loren</li>
-            <li>Loren</li>
-          </ul>
+      <section className="w-4/5 my-32 text-center m-auto flex">
+        <div className="w-2/3 flex">
+          <div className="w-2/5 bg-gray300"></div>
+          <div className="w-3/5 ">
+            <h1 className="text-x2 mb-4">Partido Teste</h1>
+            <p className="p-8">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti
+              aliquid quod ad eveniet rem ipsum id doloribus unde quisquam
+              nesciunt? Harum temporibus nam ratione nostrum doloremque, a autem
+              mollitia quaerat. Lorem ipsum, dolor sit amet consectetur
+              adipisicing elit. Totam, nihil dolor. Consequatur vitae sunt
+              laborum, laboriosam ad adipisci. Quibusdam ipsum libero dolores
+              debitis quo expedita modi nesciunt, ad nobis consectetur.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section className="w-4/5 my-32 text-center m-auto flex justify-end">
+        <div className="w-2/3 flex">
+          <div className="w-3/5 ">
+            <h1 className="text-x2 mb-4">Partido Teste</h1>
+            <p className="p-8">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti
+              aliquid quod ad eveniet rem ipsum id doloribus unde quisquam
+              nesciunt? Harum temporibus nam ratione nostrum doloremque, a autem
+              mollitia quaerat. Lorem ipsum, dolor sit amet consectetur
+              adipisicing elit. Totam, nihil dolor. Consequatur vitae sunt
+              laborum, laboriosam ad adipisci. Quibusdam ipsum libero dolores
+              debitis quo expedita modi nesciunt, ad nobis consectetur.
+            </p>
+          </div>
+          <div className="w-2/5 bg-gray300"></div>
         </div>
       </section>
     </main>
