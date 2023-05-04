@@ -40,7 +40,9 @@ export default function Comunismo() {
           } ${disabeld}`}
         >
           {props.left && <ArrowLeftIcon className="w-12 h-12 text-red_light" />}
-          {!props.left && <ArrowRightIcon className="w-12 h-12 text-red_light" />}
+          {!props.left && (
+            <ArrowRightIcon className="w-12 h-12 text-red_light" />
+          )}
         </div>
       </>
     );
@@ -49,10 +51,10 @@ export default function Comunismo() {
   return (
     <div className="bg-background text-gray100 w-full">
       <div className="flex w-full min-h-screen">
-      <div className="w-2/3">
+        <div className="w-2/3">
           <section className="text-center p-4 w-4/5 mx-auto my-32">
             <p className="text-sm text-red_light font-medium">01.</p>
-            <h2 className="mb-4">O que é o Socialismo?</h2>
+            <h2 className="mb-4">O que é o Comunismo?</h2>
             <div className="w-4/5 m-auto">
               <p className="p-4">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
@@ -73,7 +75,7 @@ export default function Comunismo() {
             </div>
           </section>
 
-          <section className="text-center p-4 mb-16 w-4/5 m-auto my-32">
+          <section className="text-center p-4 w-4/5 m-auto my-40">
             <div className="w-2/5 text-center flex flex-col m-auto mb-8">
               <p className="text-sm text-red_light font-medium">02.</p>
               <div className="bg-gray100">
@@ -151,7 +153,7 @@ export default function Comunismo() {
 
           <div
             ref={sliderRef}
-            className="keen-slider flex overflow-x-hidden w-full p-4 h-[400px]"
+            className="keen-slider flex overflow-x-hidden w-full h-[400px]"
           >
             <div className="keen-slider__slide bg-gray100 ">1</div>
             <div className="keen-slider__slide bg-gray100">2</div>

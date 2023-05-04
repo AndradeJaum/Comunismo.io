@@ -17,7 +17,7 @@ module.exports = {
       x7: ["4.5rem", "1"],
       x8: ["6rem", "1"],
       x9: ["8rem", "1"],
-      extra: ["10rem", "1"],
+      extra: ["10rem", "8rem"],
       plus: ["12rem", "1"],
     },
     colors: {

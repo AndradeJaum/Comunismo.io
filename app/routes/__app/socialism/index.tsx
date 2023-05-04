@@ -75,7 +75,7 @@ export default function Socialismo() {
             </div>
           </section>
 
-          <section className="text-center p-4 mb-16 w-4/5 m-auto my-32">
+          <section className="text-center p-4 w-4/5 m-auto my-40">
             <div className="w-2/5 text-center flex flex-col m-auto mb-8">
               <p className="text-sm text-red_light font-medium">02.</p>
               <div className="bg-gray100">
@@ -153,7 +153,7 @@ export default function Socialismo() {
 
           <div
             ref={sliderRef}
-            className="keen-slider flex overflow-x-hidden w-full p-4 h-[400px]"
+            className="keen-slider flex overflow-x-hidden w-full h-[400px]"
           >
             <div className="keen-slider__slide bg-gray100 ml-24">1</div>
             <div className="keen-slider__slide bg-gray100">2</div>

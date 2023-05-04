@@ -83,7 +83,7 @@ export default function ReadingGuide() {
 
           <div
             ref={sliderRef}
-            className="keen-slider flex overflow-x-hidden w-full p-4 h-[400px]"
+            className="keen-slider flex overflow-x-hidden w-full h-[400px]"
           >
             <div className="keen-slider__slide bg-gray100">1</div>
             <div className="keen-slider__slide bg-gray100">2</div>
