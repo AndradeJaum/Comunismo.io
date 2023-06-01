@@ -1,12 +1,9 @@
-import { useTranslation } from "react-i18next";
 import React, { useState } from "react";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import { ArrowLeftIcon, ArrowRightIcon } from "@radix-ui/react-icons";
 
 export default function Capitalismo() {
-  let { t } = useTranslation();
-
   const [currentSlide, setCurrentSlide] = useState(0);
   const [loaded, setLoaded] = useState(false);
 

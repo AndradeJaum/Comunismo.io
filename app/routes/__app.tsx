@@ -1,8 +1,6 @@
 import { Link, Outlet } from "@remix-run/react";
-import { useTranslation } from "react-i18next";
 
 export default function Index() {
-  let { t } = useTranslation();
 
   return (
     <>
@@ -13,43 +11,43 @@ export default function Index() {
               to="/#"
               className="py-3 tracking-widest no-underline hover:border-b-4 hover:border-red"
             >
-              {t("home")}
+              HOME
             </Link>
             <Link
               to="/communism"
               className="py-3 tracking-widest no-underline hover:border-b-4 hover:border-red active:border-red"
             >
-              {t("communism")}
+              COMUNISMO
             </Link>
             <Link
               to="/socialism"
               className="py-3 tracking-widest no-underline hover:border-b-4 hover:border-red active:border-red"
             >
-              {t("socialism")}
+              SOCIALISMO
             </Link>
             <Link
               to="/capitalism"
               className="py-3 tracking-widest no-underline hover:border-b-4 hover:border-red active:border-red"
             >
-              {t("capitalism")}
+              CAPITALISMO
             </Link>
             <Link
               to="/brazilianParties"
               className="py-3 tracking-widest no-underline hover:border-b-4 hover:border-red active:border-red"
             >
-              {t("brazilianParties")}
+              PARTIDOS BRASILEIROS
             </Link>
             <Link
               to="/readingGuide"
               className="py-3 tracking-widest no-underline hover:border-b-4 hover:border-red active:border-red"
             >
-              {t("readingGuide")}
+              GUIA DE LEITURA
             </Link>
             <Link
               to="/contact"
               className="py-3 tracking-widest no-underline hover:border-b-4 hover:border-red active:border-red"
             >
-              {t("contact")}
+              CONTATO
             </Link>
           </nav>
         </div>

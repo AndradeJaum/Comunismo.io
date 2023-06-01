@@ -1,8 +1,4 @@
-import { useTranslation } from "react-i18next";
-
 export default function BrazilianParties() {
-  let { t } = useTranslation();
-
   return (
     <div className="w-full">
       <section className="mx-auto w-4/5 text-center gap-8 pt-32 flex">
