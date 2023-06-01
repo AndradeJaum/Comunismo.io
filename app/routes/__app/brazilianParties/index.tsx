@@ -4,7 +4,7 @@ export default function BrazilianParties() {
   let { t } = useTranslation();
 
   return (
-    <div className="bg-background text-gray100 w-full">
+    <div className="w-full">
       <section className="mx-auto w-4/5 text-center gap-8 pt-32 flex">
         <div className="w-2/3">
           <p className="text-sm text-red_light font-medium text-center">01.</p>
@@ -19,7 +19,7 @@ export default function BrazilianParties() {
             debitis quo expedita modi nesciunt, ad nobis consectetur.
           </p>
         </div>
-        <div className="w-1/3 text-left text-extra text-yellow font-semibold">
+        <div className="w-1/3 text-left text-extra text-red font-semibold">
           <p className="">PAR</p>
           <p className="">TID</p>
           <p className="">OS</p>
@@ -31,11 +31,11 @@ export default function BrazilianParties() {
           <p className="text-sm text-red_light font-medium absolute -translate-y-full right-1/2 translate-x-1/2">
             02.
           </p>
-          <div className="bg-gray100 text-background">
-            <p className="py-4 px-16 text-lg font-bold">ASDA</p>
+          <div className="bg-black text-gray100">
+            <p className="py-4 px-16 text-lg font-bold">TÍTULO</p>
           </div>
-          <div className="bg-background text-gray100">
-            <p className="py-4 px-16 text-lg font-bold">ASDASD</p>
+          <div className="border border-black">
+            <p className="py-4 px-16 text-lg font-bold">TESTE</p>
           </div>
         </div>
         <div className="bg-gray100 text-background h-80 flex flex-col justify-center">
@@ -60,7 +60,7 @@ export default function BrazilianParties() {
 
       <section className="w-4/5 my-16 text-center m-auto flex">
         <div className="w-2/3 flex">
-          <div className="w-2/5 bg-gray300"></div>
+          <div className="w-2/5 bg-black"></div>
           <div className="w-3/5 ">
             <h3 className="text-x2 mb-4">Partido Teste</h3>
             <p className="p-8">
@@ -89,7 +89,7 @@ export default function BrazilianParties() {
               debitis quo expedita modi nesciunt, ad nobis consectetur.
             </p>
           </div>
-          <div className="w-2/5 bg-gray300"></div>
+          <div className="w-2/5 bg-black"></div>
         </div>
       </section>
     </div>

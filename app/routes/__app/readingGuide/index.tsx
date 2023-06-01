@@ -48,7 +48,7 @@ export default function ReadingGuide() {
   }
 
   return (
-    <main className="bg-background text-gray100 ">
+    <main className="">
       <section className="mx-auto w-1/2 text-center p-8 pt-32">
         <p className="text-sm text-red_light font-medium text-center">01.</p>
         <h1 className="text-x2 mb-4">Como começar a estudar?</h1>
@@ -85,15 +85,15 @@ export default function ReadingGuide() {
             ref={sliderRef}
             className="keen-slider flex overflow-x-hidden w-full h-[400px]"
           >
-            <div className="keen-slider__slide bg-gray100">1</div>
-            <div className="keen-slider__slide bg-gray100">2</div>
-            <div className="keen-slider__slide bg-gray100">3</div>
-            <div className="keen-slider__slide bg-gray100">4</div>
-            <div className="keen-slider__slide bg-gray100">5</div>
-            <div className="keen-slider__slide bg-gray100">5</div>
-            <div className="keen-slider__slide bg-gray100">5</div>
-            <div className="keen-slider__slide bg-gray100">5</div>
-            <div className="keen-slider__slide bg-gray100">5</div>
+            <div className="keen-slider__slide bg-black">1</div>
+            <div className="keen-slider__slide bg-black">2</div>
+            <div className="keen-slider__slide bg-black">3</div>
+            <div className="keen-slider__slide bg-black">4</div>
+            <div className="keen-slider__slide bg-black">5</div>
+            <div className="keen-slider__slide bg-black">5</div>
+            <div className="keen-slider__slide bg-black">5</div>
+            <div className="keen-slider__slide bg-black">5</div>
+            <div className="keen-slider__slide bg-black">5</div>
           </div>
 
           <div className="relative w-[10%] h-auto">
@@ -118,12 +118,12 @@ export default function ReadingGuide() {
       <section className="p-4 my-16 mb-16 w-4/5 m-auto flex justify-center">
         <div className="text-center">
           <p className="text-sm text-red_light font-medium text-left">02.</p>
-          <div className="bg-gray100">
-            <p className="py-4 px-16 text-background text-lg font-bold">
+          <div className="bg-black">
+            <p className="py-4 px-16 text-gray100 text-lg font-bold">
               PRINCIPAIS
             </p>
           </div>
-          <div className="border border-gray100">
+          <div className="border border-black">
             <p className="py-4 px-16 text-lg font-bold">TEMAS</p>
           </div>
         </div>
@@ -131,7 +131,7 @@ export default function ReadingGuide() {
 
       <section className="w-4/5 my-32 text-center m-auto flex">
         <div className="w-2/3 flex">
-          <div className="w-2/5 bg-gray100"></div>
+          <div className="w-2/5 bg-black"></div>
           <div className="w-3/5 ">
             <h1 className="text-x2 mb-4">Partido Teste</h1>
             <p className="p-8">
@@ -160,7 +160,7 @@ export default function ReadingGuide() {
               debitis quo expedita modi nesciunt, ad nobis consectetur.
             </p>
           </div>
-          <div className="w-2/5 bg-gray100"></div>
+          <div className="w-2/5 bg-black"></div>
         </div>
       </section>
     </main>

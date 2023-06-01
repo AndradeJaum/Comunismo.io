@@ -49,7 +49,7 @@ export default function Socialismo() {
   }
 
   return (
-    <div className="bg-background text-gray100 w-full">
+    <div className="w-full">
       <div className="flex w-full min-h-screen">
         <div className="w-2/3">
           <section className="text-center p-4 w-4/5 mx-auto my-32">
@@ -78,12 +78,12 @@ export default function Socialismo() {
           <section className="text-center p-4 w-4/5 m-auto my-40">
             <div className="w-2/5 text-center flex flex-col m-auto mb-8">
               <p className="text-sm text-red_light font-medium">02.</p>
-              <div className="bg-gray100">
-                <p className="py-4 px-16 text-background text-lg font-bold">
+              <div className="bg-black">
+                <p className="py-4 px-16 text-gray100 text-lg font-bold">
                   PRINCIPAIS
                 </p>
               </div>
-              <div className="border border-gray100">
+              <div className="border border-black">
                 <p className="py-4 px-16 text-lg font-bold">TEMAS</p>
               </div>
             </div>
@@ -155,17 +155,17 @@ export default function Socialismo() {
             ref={sliderRef}
             className="keen-slider flex overflow-x-hidden w-full h-[400px]"
           >
-            <div className="keen-slider__slide bg-gray100 ml-24">1</div>
-            <div className="keen-slider__slide bg-gray100">2</div>
-            <div className="keen-slider__slide bg-gray100">3</div>
-            <div className="keen-slider__slide bg-gray100">4</div>
-            <div className="keen-slider__slide bg-gray100">5</div>
-            <div className="keen-slider__slide bg-gray100">5</div>
-            <div className="keen-slider__slide bg-gray100">5</div>
-            <div className="keen-slider__slide bg-gray100">5</div>
-            <div className="keen-slider__slide bg-gray100">5</div>
-            <div className="keen-slider__slide bg-gray100">5</div>
-            <div className="keen-slider__slide bg-gray100">5</div>
+            <div className="keen-slider__slide bg-black">1</div>
+            <div className="keen-slider__slide bg-black">2</div>
+            <div className="keen-slider__slide bg-black">3</div>
+            <div className="keen-slider__slide bg-black">4</div>
+            <div className="keen-slider__slide bg-black">5</div>
+            <div className="keen-slider__slide bg-black">5</div>
+            <div className="keen-slider__slide bg-black">5</div>
+            <div className="keen-slider__slide bg-black">5</div>
+            <div className="keen-slider__slide bg-black">5</div>
+            <div className="keen-slider__slide bg-black">5</div>
+            <div className="keen-slider__slide bg-black">5</div>
           </div>
         </div>
       </section>

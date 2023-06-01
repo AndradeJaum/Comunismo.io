@@ -33,6 +33,7 @@ module.exports = {
       gray300: "#808080",
       gray200: "#D9D9D9",
       gray100: "#F2F2F2",
+      black: "#000000",
       danger: "#E25858",
       background: "#111517",
     },
